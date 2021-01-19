@@ -38,9 +38,8 @@ def digits_to_words(input_string):
 
     for i in digit_string:
         res += num_list[int(i)]
-        if i != digit_string[-1]:
-            res += ' '
-    return res
+        res += ' '
+    return res[:-1]
 
 """
 컴퓨터 프로그래밍에 많은 명명 규칙이 있지만, 두 규칙이 특히 흔히 쓰입니다. 
